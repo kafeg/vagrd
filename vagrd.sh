@@ -2,6 +2,7 @@
 # /etc/init.d/ramdisk.sh
 #
 
+# for testing
 #  sudo ./vagrd.sh uninstall && sudo ./vagrd.sh install && sudo ./vagrd.sh start && ls /vagrant/ && ls /vagrant/ramdisk/ && echo '321' >> /vagrant/ramdisk/test.txt && sudo ./vagrd.sh sync && ls /vagrant/ramproj/ && cat /vagrant/ramproj/test.txt
 
 if [ "$EUID" -ne 0 ]
