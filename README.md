@@ -1,5 +1,5 @@
 # vagrd
-Ramdisk for Vagrant/Meteor development. Fast autoreload and rebuilding app for your Meteor project
+Automatic creation of Ramdisk for Vagrant/Meteor development. Fast autoreload and rebuilding app for your Meteor project
 
 Simple using daemon for create ramdisk for your Meteor projects in vagrant virtual machine.
 
