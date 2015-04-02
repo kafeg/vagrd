@@ -26,5 +26,7 @@ For uninstall run 'sudo service vagrd uninstall'
 Meteor Vagrant installation: https://github.com/shoebappa/vagrant-meteor-windows
 
 More details:
-- http://www.observium.org/wiki/Persistent_RAM_disk_RRD_storage
-- http://www.solidmeteor.com/fasten-your-seatbelt-were-going-to-speed-up-a-meteor-gear-1-the-linux-speedway/
+- Create RAM-storage: http://www.observium.org/wiki/Persistent_RAM_disk_RRD_storage
+- Move meteor to RAM storage: http://www.solidmeteor.com/fasten-your-seatbelt-were-going-to-speed-up-a-meteor-gear-1-the-linux-speedway/
+
+Also you need quickmeteor for speed up meteor work on RAM disk: https://www.npmjs.com/package/quickmeteorhttps://www.npmjs.com/package/quickmeteor
