@@ -85,7 +85,7 @@ case "$1" in
 		    echo `ls /vagrant/ramdisk`
 			
 			echo "Install cron sync task"
-			echo "2 * * * * root        /etc/init.d/ramdisk sync >> /dev/null 2>&1" >> /etc/crontab
+			echo "2 * * * * root        service vagrd sync >> /dev/null 2>&1" >> /etc/crontab
 		    echo "Installation complete! Run 'sudo service vagrd start'"
 	      else
 	        echo "Script already installed! Exit..."
