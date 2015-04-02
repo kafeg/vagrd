@@ -28,5 +28,4 @@ Meteor Vagrant installation: https://github.com/shoebappa/vagrant-meteor-windows
 More details:
 - Create RAM-storage: http://www.observium.org/wiki/Persistent_RAM_disk_RRD_storage
 - Move meteor to RAM storage: http://www.solidmeteor.com/fasten-your-seatbelt-were-going-to-speed-up-a-meteor-gear-1-the-linux-speedway/
-
-Also you need quickmeteor for speed up meteor work on RAM disk: https://www.npmjs.com/package/quickmeteorhttps://www.npmjs.com/package/quickmeteor
+- Also you need quickmeteor for speed up meteor work on RAM disk: https://github.com/eluck/quickmeteor
