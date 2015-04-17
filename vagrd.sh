@@ -1,4 +1,4 @@
-#! /bin/bash 
+#! /bin/bash -x
 # /etc/init.d/ramdisk.sh
 #
 
@@ -26,18 +26,18 @@ case "$1" in
     echo "Chmod for project"
     chown $USERNAME -R /vagrant/ramdisk/
     chmod 777 -R /vagrant/ramdisk/
-    echo [`date +"%Y-%m-%d %H:%M"`] Ramdisk Synched from HD >> /var/log/vagrd_sync.log
+    echo [`date +"%Y-%m-%d %H:%M"`] Ramdisk Synched from HDD >> /var/log/vagrd_sync.log
     ;;
   sync)
     echo "Synching files from ramdisk to Harddisk"
-    echo [`date +"%Y-%m-%d %H:%M"`] Ramdisk Synched to HD >> /var/log/vagrd_sync.log
+    echo [`date +"%Y-%m-%d %H:%M"`] Ramdisk Synched to HDD >> /var/log/vagrd_sync.log
     rsync -av --delete --recursive --force /vagrant/ramdisk/ /vagrant/ramproj/
     rsync -avv --delete /home/$USERNAME/.meteor/ /home/$USERNAME/.meteor_persistent/
     rsync -avv --delete /home/$USERNAME/.npm/ /home/$USERNAME/.npm_persistent/
     ;;
   stop)
     echo "Synching logfiles from ramdisk to Harddisk"
-    echo [`date +"%Y-%m-%d %H:%M"`] Ramdisk Synched to HD >> /var/log/vagrd_sync.log
+    echo [`date +"%Y-%m-%d %H:%M"`] Ramdisk Synched to HDD >> /var/log/vagrd_sync.log
     rsync -av --delete --recursive --force /vagrant/ramdisk/ /vagrant/ramproj/
     rsync -avv --delete /home/$USERNAME/.meteor/ /home/$USERNAME/.meteor_persistent/
     rsync -avv --delete /home/$USERNAME/.npm/ /home/$USERNAME/.npm_persistent/
@@ -129,8 +129,8 @@ case "$1" in
 
       echo "Restore fstab"
       sed -i '\/vagrant\/ramdisk/d' /etc/fstab
-      sed -i '\/home\/$SUDO_USER\/.meteor/d' /etc/fstab
-      sed -i '\/home\/$SUDO_USER\/.npm/d' /etc/fstab
+      sed -i "\/home\/$SUDO_USER\/.meteor/d" /etc/fstab
+      sed -i "\/home\/$SUDO_USER\/.npm/d" /etc/fstab
 
       echo "Restore crontab"
       sed -i '/vagrd/d' /etc/crontab
