@@ -29,3 +29,10 @@ More details:
 - Create RAM-storage: http://www.observium.org/wiki/Persistent_RAM_disk_RRD_storage
 - Move meteor to RAM storage: http://www.solidmeteor.com/fasten-your-seatbelt-were-going-to-speed-up-a-meteor-gear-1-the-linux-speedway/
 - Also you need quickmeteor for speed up meteor work on RAM disk: https://github.com/eluck/quickmeteor
+
+=======
+Информация:
+Разработчик: Виталий Петров aka kafeg, v31337[at]gmail.com
+http://forsk.ru - адекватная автоматизация бизнес процессов.
+http://skid.kz - авоматический агрегатор скидок Республики Казахстан.
+http://kellot.ru - онлайн табель учёта рабочего времени по формам Т-12 и Т-13.
